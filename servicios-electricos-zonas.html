@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios Eléctricos - Instalaciones, reparaciones y mantenimiento.">
+  <title>Servicios Eléctricos</title>
+  <style>
+    :root {
+      --blue: #0757b8;
+      --dark: #07356f;
+      --light: #f4f8ff;
+      --white: #ffffff;
+      --text: #172033;
+      --accent: #0b67d1;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, var(--dark), var(--blue));
+      color: white;
+      padding: 70px 20px 55px;
+      text-align: center;
+    }
+    .bolt { font-size: 48px; margin-bottom: 8px; }
+    h1 { margin: 0 0 10px; font-size: clamp(34px, 9vw, 58px); }
+    .tagline { font-size: clamp(19px, 4.5vw, 27px); margin: 0 auto 25px; }
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--dark);
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      margin: 6px;
+      box-shadow: 0 5px 16px rgba(0,0,0,.15);
+    }
+    .btn.blue { background: var(--blue); color: white; }
+    .number { font-size: 20px; font-weight: 700; margin-top: 12px; }
+    section { padding: 55px 20px; }
+    .wrap { max-width: 1050px; margin: auto; }
+    h2 {
+      color: var(--dark);
+      text-align: center;
+      font-size: 31px;
+      margin: 0 0 30px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: var(--light);
+      border: 1px solid #dce9fb;
+      border-radius: 14px;
+      padding: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .why {
+      background: var(--light);
+    }
+    .why-list {
+      max-width: 700px;
+      margin: auto;
+      display: grid;
+      gap: 12px;
+    }
+    .why-item {
+      background: white;
+      border-radius: 12px;
+      padding: 15px 18px;
+      border-left: 5px solid var(--blue);
+      font-weight: 600;
+    }
+    .promo {
+      background: var(--blue);
+      color: white;
+      text-align: center;
+    }
+    .promo h2 { color: white; }
+    .discount { font-size: 31px; font-weight: 900; margin: 5px 0; }
+    .contact {
+      text-align: center;
+    }
+    .contact-box {
+      max-width: 650px;
+      margin: auto;
+      background: var(--light);
+      border-radius: 16px;
+      padding: 28px 20px;
+    }
+    footer {
+      background: #062d5d;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+      font-size: 14px;
+    }
+    @media (max-width: 500px) {
+      header { padding-top: 52px; }
+      section { padding: 45px 16px; }
+      .btn { width: 100%; max-width: 330px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="bolt">⚡</div>
+  <h1>Servicios Eléctricos</h1>
+  <p class="tagline">Instalaciones, reparaciones y mantenimiento</p>
+  <a class="btn" href="https://wa.me/5491176623084?text=Hola%2C%20quisiera%20consultar%20por%20un%20trabajo%20de%20electricidad." target="_blank" rel="noopener">
+    📲 Consultar por WhatsApp
+  </a>
+  <div class="number">11 7662-3084</div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Nuestros servicios ⚡</h2>
+    <div class="services">
+      <div class="card">🔌 Cambio de tomacorrientes e interruptores</div>
+      <div class="card">💡 Instalación y cambio de luminarias</div>
+      <div class="card">⚡ Instalaciones eléctricas</div>
+      <div class="card">🔧 Reparaciones eléctricas</div>
+      <div class="card">🧰 Mantenimiento eléctrico</div>
+      <div class="card">🔎 Detección y solución de fallas</div>
+      <div class="card">💡 Luces automáticas para escaleras</div>
+      <div class="card">🌙 Luces automáticas nocturnas</div>
+      <div class="card">🚨 Trabajos de emergencia</div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="why-list">
+      <div class="why-item">✅ Atención personalizada</div>
+      <div class="why-item">✅ Trabajo responsable y profesional</div>
+      <div class="why-item">✅ Presupuestos según cada trabajo</div>
+      <div class="why-item">✅ Atención para reparaciones y emergencias</div>
+      <div class="why-item">✅ Servicio para hogares y comercios</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Zona de trabajo 📍</h2>
+    <p style="text-align:center;font-size:21px;font-weight:700;">
+      Trabajamos en CABA, Zona Norte y Zona Sur<br>
+       <span style="font-size:18px;">San Justo · Ciudad Evita · Lomas de Zamora · Banfield</span>
+    </p>
+  </div>
+</section>
+
+<section class="promo">
+  <div class="wrap">
+    <h2>Promoción</h2>
+    <div class="discount">10% DE DESCUENTO</div>
+    <p>Para clientes nuevos o pagando en efectivo.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>¿Necesitás un electricista? 🔧</h2>
+    <div class="contact-box">
+      <p><strong>📲 WhatsApp:</strong> 11 7662-3084</p>
+      <p><strong>🕐 Horario:</strong> a convenir</p>
+      <a class="btn blue" href="https://wa.me/5491176623084?text=Hola%2C%20quisiera%20consultar%20por%20un%20trabajo%20de%20electricidad." target="_blank" rel="noopener">
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Servicios Eléctricos · Instalaciones · Reparaciones · Mantenimiento
+</footer>
+
+</body>
+</html>
